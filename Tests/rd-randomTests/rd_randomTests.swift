@@ -1,12 +1,17 @@
-import XCTest
 @testable import rd_random
+import XCTest
 
 final class rd_randomTests: XCTestCase {
+
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(rd_random().text, "Hello, World!")
+        // Given
+        let length = 10
+
+        // When
+        let string = String.random(length)
+
+        // Then
+        XCTAssertEqual(length, string.count)
     }
 
     static var allTests = [
