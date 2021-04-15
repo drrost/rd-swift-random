@@ -1,4 +1,4 @@
-@testable import rd_random
+@testable import RDRandom
 import XCTest
 
 final class rd_randomTests: XCTestCase {
